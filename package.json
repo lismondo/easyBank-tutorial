@@ -4,24 +4,25 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "serve",
-    "build": "echo This is a static template, there is no bundler or bundling involved!"
+    "css-build": "node-sass --omit-source-map-url scss/style.scss dist/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
+    "url": "git+https://github.com/lismondo/easyBank-tutorial.git"
   },
   "keywords": [],
   "author": "Ives van Hoorne",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
+    "url": "https://github.com/lismondo/easyBank-tutorial/issues"
   },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "homepage": "https://github.com/lismondo/easyBank-tutorial#readme",
   "devDependencies": {
     "serve": "^11.2.0"
   },
   "dependencies": {
-    "sass": "1.26.10"
+    "node-sass": "4.14.1"
   }
 }
